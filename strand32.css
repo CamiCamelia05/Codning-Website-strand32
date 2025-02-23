@@ -1,0 +1,227 @@
+body {
+    background-color: #D6CFC8;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    
+
+}
+
+/* Vi giver nu vores a kode altså den kode som vi bruger til at kunne komme ind på fx kvinder og andet et navn, 
+herunder vil vi gerne lave en margin som gør at der bliver et mellemrum mellem de forskellige menu items. 
+Herunder bruger vi rem, 1 rem er 16 pixels og grunden til vi bruger dette er fordi den retter sig efter fonten på forskellige devices. */
+.menuitem {
+    margin-right: 1rem;
+    color:black;
+    text-decoration: none;
+}
+.categoryitem {
+    margin-right: 1rem;
+    color:black;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.menu {
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+/*
+Dette er stylingen til menuicon og search så det viser hvordan den skal sidde på siden hvilken størrelse det skal være og hvor meget mellemrum der skal være.
+*/
+.menuicon {
+    width: 1.8rem;
+    float:right;
+    margin-left: 1rem;
+}
+
+/*
+Vi laver herefter vores search bar class for at lave den som vi gerne vil have den. Derefter laver vi den med a:hover hvor vi gør 
+så at farven på de ting vi har i menuen, skifter til grå når vi holder musen over dem. Derefter ændrer vi på overskriften strand32 altså vores header. 
+Derefter laver vi en der hedder textmain som er hvordan den tekst der er på siden, skal være.
+Vi har derefter et til billede som skal sidde på en bestemt måde, vi laver derfor en class der hedder mainitem til den. Nedenunder den
+skal der også være et billede af deres instagram og dette skal også rettes efter så derfor får den class infoinsta.
+Derefter laver vi 6 billeder i bunden som er de forskellige kendte brands, disse skal være lige efter hinanden hvilket vi laver med en margin.
+Til sidst skal disse have tekst lige under dem alle som også laves med en margin, derfor har de næsten den samme class bare med text efter.
+
+*/
+.search {
+    width: 10rem;
+    height: 1rem;
+    float:right;
+    margin-left: 1rem;
+    margin-top: 0.2rem;
+}
+a:hover {
+    color: rgb(81, 79, 79);
+  }
+
+  /*
+  For at få vores header og i dette tilfælde logo, bruger vi det der hedder position til at vise hvor den skal være på siden, vi vil 
+  ikke have at logoet skal rykke sig når vi rykker på siden og derfor bruger vi det der hedder absolute, dette betyder at vi har bundet
+  den til vores nav hvilket er vores menu. Dette gøres for at den ikke rykker sig. Derefter vil vi have at dette logo skal være midt
+  på siden oppe i menuen. Dette gøres ved først og fremmest at få den til at være 50% left, da dette er halvejs på siden. For at logoet
+  igen ikke skal rykke sig længere left når vi rykker på siden bruger vi transform og translate til at sige den skal være 50% af sig selv.
+  Dette betyder at den i den vandrette retning bliver centreret der hvor den skal være. Det er også derfor der står 0 fordi den ikke skal rykkes på lodret.
+  Til sidst angiver vi hvor stort logoet skal være og hvor meget den skal rygges med en margin så den passer til menuen.
+  */
+.header {
+   position: absolute;
+   left: 50%;
+   transform: translate(-50%, 0);
+   width: 14rem;
+   margin-top: -1.6rem;
+
+  }
+
+.textmain {
+    margin-top: 9rem;
+}
+
+.mainitem {
+   width: 50%;
+   float:right;
+   margin-top: 3rem;
+}
+
+.infoinsta {
+    margin-bottom: 8rem;
+}
+
+.brandtext {
+    margin-bottom: 4rem;
+}
+
+.knownbrands {
+    width: 15%;
+    margin-right: 1.5rem;
+}
+.prada {
+    width: 15%;
+}
+
+
+
+.diortext {
+    margin-left: 5.5rem;
+    margin-right: 12rem;
+}
+.chaneltext {
+    margin-right: 10rem;
+}
+.louistext {
+    margin-right: 10rem;
+}
+.guccitext {
+    margin-right: 11rem;
+}
+.balentext {
+    margin-right: 10rem;
+}
+
+
+
+/*
+Vi vil gerne lave så vores billeder altså de items vi skal have i vores shop, skal ligge ligesom en tabel efter hinanden. Vi vil derfor
+lave det der hedder et display. Et display viser hvordan på siden fx 3 felter vil være det er den række man laver. Herunder bruger vi flex.
+Flex gør så de her rows er fleksible og de ændrer sig derfor efter mine krav så fx skriver vi justify content space between hvilket betyder 
+at der skal være mellemrum mellem de 3 elementer i vores række, disse elementer er herunder mine columns. Derefter laver vi det så at 
+de har en width på 100% da vores rows skal fylde hele siden. Igennem vores .row .colum referer vi først til row som angiver
+de forskellige krav til rows og den ligger derefter columns ind i disse. Herunder vil vi gerne have at der jo skal være space imellem de forskellige
+rows hvilket vi gjorde med kommandoen som nævnt før. Da der er 3 skal vi være sikker på at vores flex basis er under 33,33% da dette ville udgøre de 100%
+for at bibeholde mellemrummet laver vi den derfor til en procentdel under dette. Til sidst giver vi vores columns en farve som de alle skal have.
+
+*/
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.row .column {
+    flex-basis: 32%;
+    background:#ffffff;
+    padding-left: 1rem;
+}
+
+.row .column img {
+    max-width: 80%;
+    width: 80%;
+}
+/* 
+For at lave størrelsen om på vores text har vi brugt den code der hedder font-size
+*/
+.headline {
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 500%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.bodytext {
+    text-align: center;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+
+.bottomtext {
+    text-align: center;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    line-height: 2rem;
+    margin-top: 2rem;
+}
+
+.storybillede {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.store {
+    width: 25%;
+    margin-left: 5.5rem;
+    margin-top: 2rem;
+}
+
+.shippinghead {
+    font-size: 300%;
+    margin-top: 5rem;
+    text-align: center;
+    margin-bottom: 5rem;
+
+}
+
+.shippingimage1 {
+    width: 30%;
+    float:right;
+    margin-left: 12rem;
+    margin-right: 12rem;
+    margin-bottom: 10rem;
+    
+}
+
+.shippingimage2 {
+    width: 30%;
+    float:right;
+    margin-left: 12rem;
+    margin-right: 12rem;
+    
+}
+
+.shiptext {
+    line-height: 3rem;
+    margin-bottom: 2rem;
+    
+   
+}
+
+.shiptext2 {
+    line-height: 3rem;
+    margin-bottom: 2rem;
+    
+}
+

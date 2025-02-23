@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Strand32</title>
+        <link rel="stylesheet" type="text/css" href="strand32.css">
+        <script src="script.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <!--
+        Den første hvor der står link referer vi til vores css kode altså det design vi vil lave på hjemmesiden.
+        Scriptet under dette referer til vores java script kode. 
+        Vi laver derefter et link mere til at vise hvad for en font vi gerne vil bruge da programmet ikke har den i forvejen.
+        -->
+    </head>
+    <body>
+        <!--
+            Vi laver det der hedder en nav for at vise at dette er vores navigationssystem
+            herunder laver vi alle den tekst som man skal kunne klikke på hvor man så skal
+            kunne komme videre til deres html filer altså de andre sider på hjemmesiden.
+            De får allesammen også en class så vi kan lave mellemrummet imellem dem i css altså margin
+            Derefter vil vi gerne lave ikoner som vi her også skal kunne komme ind til den næste side på,
+            vi laver derfor det samme hvor vi skriver a og referer til den næste html side som passer til det ikon dette sker kun med 3 af ikonerne. 
+            Derefter er der et billede på hvordan ikonet ser ud dette sker med alle 5 ikoner.
+            Derefter giver vi den en class så vi kan style den i css.
+            Det sidste der er er et søgefelt hvor man indtil videre kan skrive i det dette har fået sin egen class som er stylet i css.
+            -->
+        
+        <nav class="menu">
+    
+            <a href="females.html" class="menuitem">Kvinder</a>
+            <a href="males.html" class="menuitem">Mænd</a>
+            <a href="story.html" class="menuitem">Om os</a>
+            <a href="news.html" class="menuitem">Nyhedsbrev</a>
+            <a href="shipping.html" class="menuitem">Forsendelser</a>
+            <img src = "images/earth.svg" class="menuicon"></a>
+            <a href="likes.html"><img src = "images/heart.svg" class="menuicon"></a>
+            <a href="basket.html"><img src = "images/shopping.svg" class="menuicon"></a>
+            <a href="person.html"><img src = "images/avatar.svg" class="menuicon"></a>
+            <img src = "images/search.svg" class="menuicon">
+            <input type="text" placeholder="søg.." class="search">
+            <a href="index.html"><img src ="images/logo.png" class="header"></a>
+
+        </nav>
+        <section id="main">
+
+            <div class="row">
+                <div class="column">
+                    <h3>Sko</h3>
+                    <img src="images/pradamen.jpg">
+                    <p>Prada</p>
+                    <p>Størrelse: 42</p>
+                    <p>Pris: 3500 kr.</p>
+                </div>
+                <div class="column">
+                    <h3>Skjorte</h3>
+                    <img src="images/margielamen.jpg">
+                    <p>Margiela</p>
+                    <p>Størrelse: XL</p>
+                    <p>Pris: 4000 kr.</p>
+                </div>
+                <div class="column">
+                    <h3>Bukser</h3>
+                    <img src="images/commemen.jpg">
+                    <p>Commedesgarcons</p>
+                    <p>Størrelse: L</p>
+                    <p>Pris: 3200 kr.</p>
+
+                </div>
+           </div>
+           <div class="row">
+                <div class="column">
+                    <h3>Jakke</h3>
+                    <img src="images/guccimen.jpg">
+                    <p>GUCCI</p>
+                    <p>Størrelse: L</p>
+                    <p>Pris: 5600 kr.</p>
+                </div>
+                    
+                <div class="column">
+                    <h3>Skjorte</h3>
+                    <img src="images/yohjiyamen.jpg">
+                    <p>Yohjiyamamoto</p>
+                    <p>Størrelse: M</p>
+                    <p>Pris: 1500 kr.</p>
+                </div>
+                    
+                <div class="column">
+                    <h3>Sko</h3>
+                    <img src="images/krismen.jpg">
+                    <p>Krisvanassche</p>
+                    <p>Størrelse: 43</p>
+                    <p>Pris: 2400 kr.</p>
+                </div>
+                
+       </div>
+
+        </section>
+    </body>
+</html>

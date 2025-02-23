@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Strand32</title>
+        <link rel="stylesheet" type="text/css" href="strand32.css">
+        <script src="script.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <!--
+        Den første hvor der står link referer vi til vores css kode altså det design vi vil lave på hjemmesiden.
+        Scriptet under dette referer til vores java script kode. 
+        Vi laver derefter et link mere til at vise hvad for en font vi gerne vil bruge da programmet ikke har den i forvejen.
+        -->
+    </head>
+    <body>
+        <!--
+            Vi laver det der hedder en nav for at vise at dette er vores navigationssystem
+            herunder laver vi alle den tekst som man skal kunne klikke på hvor man så skal
+            kunne komme videre til deres html filer altså de andre sider på hjemmesiden.
+            De får allesammen også en class så vi kan lave mellemrummet imellem dem i css altså margin
+            Derefter vil vi gerne lave ikoner som vi her også skal kunne komme ind til den næste side på,
+            vi laver derfor det samme hvor vi skriver a og referer til den næste html side som passer til det ikon dette sker kun med 3 af ikonerne. 
+            Derefter er der et billede på hvordan ikonet ser ud dette sker med alle 5 ikoner.
+            Derefter giver vi den en class så vi kan style den i css.
+            Det sidste der er er et søgefelt hvor man indtil videre kan skrive i det dette har fået sin egen class som er stylet i css.
+            -->
+        
+        <nav class="menu">
+    
+            <a href="females.html" class="menuitem">Kvinder</a>
+            <a href="males.html" class="menuitem">Mænd</a>
+            <a href="story.html" class="menuitem">Om os</a>
+            <a href="news.html" class="menuitem">Nyhedsbrev</a>
+            <a href="shipping.html" class="menuitem">Forsendelser</a>
+            <img src = "images/earth.svg" class="menuicon"></a>
+            <a href="likes.html"><img src = "images/heart.svg" class="menuicon"></a>
+            <a href="basket.html"><img src = "images/shopping.svg" class="menuicon"></a>
+            <a href="person.html"><img src = "images/avatar.svg" class="menuicon"></a>
+            <img src = "images/search.svg" class="menuicon">
+            <input type="text" placeholder="søg.." class="search">
+            <a href="index.html"><img src ="images/logo.png" class="header"></a>
+
+        </nav>
+
+        <section id="story">
+            <p class="headline">OM STRAND32</p>
+            <p class="bodytext">Strand 32 er ikke bare en butik – det er en passion, der har taget overhånd.</p>
+            <p class="bodytext">Vi er Rune og Jeanette. Et ægtepar, der har samlet designertøj i over 20 år, indtil vores lejlighed, loftrum og kælderrum bugnede. På et tidspunkt måtte vi tage en beslutning: Skulle vi skille os af med noget af det – eller skulle vi tage skridtet videre og åbne en butik? Vi valgte det sidste.</p> 
+            <p class="bodytext">Strand 32 er vores skatkammer, vores lille fristed, hvor vi samler de ting, vi selv elsker. Vi jagter det sjældne, det ikoniske, det håndværksmæssigt overlegne – og vi gør det på vores egen måde. Vores tøj er håndplukket fra hele verden gennem auktioner, rejser og forbindelser, vi har skabt gennem årene. Her finder du Prada, Louis Vuitton, Dior og mange flere – men du finder dem kun én af gangen. Hvert stykke tøj har sin egen historie, og vi elsker at dele den med dem, der kigger forbi.</p>
+            <img src = "images/storybillede.jpg" class="storybillede">
+            <p class="bottomtext">Men Strand 32 er ikke for alle – og det skal det heller ikke være. Vi jagter ikke trends eller hurtige salg. Vi køber det, vi selv synes er fedt, og vi sælger kun det, vi kan stå inde for. Vi driver forretningen på ærlighed og kærlighed til godt design. Og vi elsker, når folk kommer forbi for at nørde med os, grave sig gennem tøjet og opdage noget, de ikke vidste, de manglede.</p>
+            <p class="bottomtext">Selvom du kan gå på opdagelse her på webshoppen må du også meget gerne komme ned i butikken, mærke stoffet, prøve tøjet og tage dig tid. For det er sådan, vi mener, godt tøj også skal opleves. Velkommen til vores verden. Vi glæder os til at møde dig.</p>
+            <p class="bottomtext">Rune & Jeanette</p>
+            <img src = "images/strand32story.JPG" class="store">
+            <img src = "images/strand32sko.JPG" class="store">
+            <img src = "images/strand32bag.JPG" class="store">
+        </section>
+    </body>
+</html>

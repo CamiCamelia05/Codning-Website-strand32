@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Strand32</title>
+        <link rel="stylesheet" type="text/css" href="strand32.css">
+        <script src="script.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <!--
+        Den første hvor der står link referer vi til vores css kode altså det design vi vil lave på hjemmesiden.
+        Scriptet under dette referer til vores java script kode. 
+        Vi laver derefter et link mere til at vise hvad for en font vi gerne vil bruge da programmet ikke har den i forvejen.
+        -->
+    </head>
+    <body>
+        <!--
+            Vi laver det der hedder en nav for at vise at dette er vores navigationssystem
+            herunder laver vi alle den tekst som man skal kunne klikke på hvor man så skal
+            kunne komme videre til deres html filer altså de andre sider på hjemmesiden.
+            De får allesammen også en class så vi kan lave mellemrummet imellem dem i css altså margin
+            Derefter vil vi gerne lave ikoner som vi her også skal kunne komme ind til den næste side på,
+            vi laver derfor det samme hvor vi skriver a og referer til den næste html side som passer til det ikon dette sker kun med 3 af ikonerne. 
+            Derefter er der et billede på hvordan ikonet ser ud dette sker med alle 5 ikoner.
+            Derefter giver vi den en class så vi kan style den i css.
+            Det sidste der er er et søgefelt hvor man indtil videre kan skrive i det dette har fået sin egen class som er stylet i css.
+            -->
+        
+        <nav class="menu">
+    
+            <a href="females.html" class="menuitem">Kvinder</a>
+            <a href="males.html" class="menuitem">Mænd</a>
+            <a href="story.html" class="menuitem">Om os</a>
+            <a href="news.html" class="menuitem">Nyhedsbrev</a>
+            <a href="shipping.html" class="menuitem">Forsendelser</a>
+            <img src = "images/earth.svg" class="menuicon"></a>
+            <a href="likes.html"><img src = "images/heart.svg" class="menuicon"></a>
+            <a href="basket.html"><img src = "images/shopping.svg" class="menuicon"></a>
+            <a href="person.html"><img src = "images/avatar.svg" class="menuicon"></a>
+            <img src = "images/search.svg" class="menuicon">
+            <input type="text" placeholder="søg.." class="search">
+            <a href="index.html"><img src ="images/logo.png" class="header"></a>
+
+        </nav>
+        <section id="shipping">
+            <p class="shippinghead" >Om vores forsendelser</p>
+            <img src="images/shipping1.png" class="shippingimage1">
+            
+            <span class="shiptext">Strand32 vil gerne nå længere ud i verden. Vi er ikke bare en Butik men en livsstil der går op i designermode. Vi vil gerne dele vores passioner og drømme med resten af verden.</span>
+            <span class="shiptext">Vores formål er derfor at kunne sende vores vare til de mest kendte storbyer i hele verden. Disse storbyer er byer som London, New York der har en stor glæde for mode og designertøj. Vores kunder er for det meste udlændinge og vi vil derfor gerne nå ud til endnu flere.</span> 
+            <span class="shiptext">Hos Strand32 behandler vi hver ordre med største omhu for at sikre, at dine eksklusive secondhand high-end varer når dig i perfekt stand. Vi tilbyder sikker og pålidelig forsendelse både nationalt og internationalt, så du kan handle sjældne designerfund uanset din placering.</span>
+            <h2 class="shiptext">Forsendelsesmuligheder & Leveringstid</h2>
+            <span class="shiptext">
+                Danmark: 1-3 hverdage med forsikret levering.
+                Europa: 3-5 hverdage via premium kurérservice.
+                Resten af verden: 5-10 hverdage afhængigt af destination.
+                Ønsker du ekspreslevering, kan dette tilvælges ved checkout mod et ekstra gebyr.</span>
+            <p>Alle forsendelser er forsikrede og leveres med en tracking-kode,</p>
+            <p>så du kan følge din pakke hele vejen til din dør.</p>
+            <img src="images/shipping2.jpg" class="shippingimage2">
+            <h2 class="shiptext">Eksklusiv Emballage & Sikring</h2>
+            <span class="shiptext2">For at matche værdien af vores varer anvender vi premium emballage, der beskytter dine køb under forsendelsen. Hver ordre pakkes individuelt og sikres mod transportskader. Vi benytter bæredygtige materialer, uden at gå på kompromis med kvaliteten.</span>
+            <h2 class="shiptext">Returnering & Ombytning</h2>
+            <span class="shiptext2">Da vores varer er unikke, tilbyder vi kun returnering inden for 7 dage fra modtagelse, og kun hvis varen er i samme stand som ved køb. Kontakt os hurtigst muligt, hvis du ønsker en returnering eller ombytning. Se vores returpolitik for mere information.
+                Har du spørgsmål eller særlige ønsker til din forsendelse?</span>
+            <p>Kontakt os på [indsæt e-mail eller telefonnummer], så sikrer vi en løsning skræddersyet til dig.</p>
+            <span class="shiptext2">Vi håber at vores brand kan nå ud til mange af jer der sidder derhjemme. Rune & Jeanette</span>
+        </section>
+    </body>
+</html>

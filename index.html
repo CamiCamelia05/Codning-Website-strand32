@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Strand32</title>
+        <link rel="stylesheet" type="text/css" href="strand32.css">
+        <script src="script.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <!--
+        Den første hvor der står link referer vi til vores css kode altså det design vi vil lave på hjemmesiden.
+        Scriptet under dette referer til vores java script kode. 
+        Vi laver derefter et link mere til at vise hvad for en font vi gerne vil bruge da programmet ikke har den i forvejen.
+        -->
+    </head>
+    <body>
+        <!--
+            Vi laver det der hedder en nav for at vise at dette er vores navigationssystem
+            herunder laver vi alle den tekst som man skal kunne klikke på hvor man så skal
+            kunne komme videre til deres html filer altså de andre sider på hjemmesiden.
+            De får allesammen også en class så vi kan lave mellemrummet imellem dem i css altså margin
+            Derefter vil vi gerne lave ikoner som vi her også skal kunne komme ind til den næste side på,
+            vi laver derfor det samme hvor vi skriver a og referer til den næste html side som passer til det ikon dette sker kun med 3 af ikonerne. 
+            Derefter er der et billede på hvordan ikonet ser ud dette sker med alle 5 ikoner.
+            Derefter giver vi den en class så vi kan style den i css.
+            Det sidste der er er et søgefelt hvor man indtil videre kan skrive i det dette har fået sin egen class som er stylet i css.
+            -->
+        
+        <nav class="menu">
+    
+            <a href="females.html" class="menuitem">Kvinder</a>
+            <a href="males.html" class="menuitem">Mænd</a>
+            <a href="story.html" class="menuitem">Om os</a>
+            <a href="news.html" class="menuitem">Nyhedsbrev</a>
+            <a href="shipping.html" class="menuitem">Forsendelser</a>
+            <img src = "images/earth.svg" class="menuicon"></a>
+            <a href="likes.html"><img src = "images/heart.svg" class="menuicon"></a>
+            <a href="basket.html"><img src = "images/shopping.svg" class="menuicon"></a>
+            <a href="person.html"><img src = "images/avatar.svg" class="menuicon"></a>
+            <img src = "images/search.svg" class="menuicon">
+            <input type="text" placeholder="søg.." class="search">
+            <a href="index.html"><img src ="images/logo.png" class="header"></a>
+
+        </nav>
+
+        <!--
+        Herunder har vi lavet en anden sektion som har et id der hedder main hvilket er alt det der skal være på forsiden.
+        der indsættes de forskellige billeder der skal bruges på siden, disse får alle en class så de kan ændres på i css. der skrives 
+        også noget tekstmed p og span, samt der bliver lavet en header. Desuden bliver der også sat et link ind til deres Instagram.
+
+        -->
+        <section id="main">
+            <img src = "images/strand.png" style="width:100%;">
+           <img src = "images/strandinsta.png" class="mainitem">
+           <h1 class="textmain">Vores instagram</h1>
+           <p>Elsker du godt tøj og unikt design? Følg med på vores Instagram for inspiration,</p>
+           <p>nye fund og et kig ind i vores verden af eksklusive skatte.</p> 
+           <p>Eller endnu bedre – kom forbi butikken, sig hej, og gå på opdagelse selv.</p>
+           <a href="https://www.instagram.com/strand32_secondhand/">@strand32_secondhand</a>
+           <img src = "images/insta.png" class="infoinsta">
+           <h2 class="brandtext">De mest kendte brands vi har: </h2>
+           <img src ="images/dior.jpg" class="knownbrands">
+           <img src="images/chanel.jpg" class="knownbrands">
+           <img src="images/louis.jpg" class="knownbrands">
+           <img src ="images/gucci.png" class="knownbrands">
+           <img src ="images/balenciaga.jpg" class="knownbrands">
+           <img src ="images/prada.jpg" class="prada">
+           <span class="diortext">Dior</span>
+           <span class="chaneltext">Chanel</span>
+           <span class="louistext">Louis Vuittion</span>
+           <span class="guccitext">GUCCI</span>
+           <span class="balentext">Balenciaga</span>
+           <span>Prada</span>
+
+           
+
+        </section>
+
+    </body>
+</html>
